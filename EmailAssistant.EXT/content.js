@@ -91,7 +91,7 @@ function injectButton() {
             console.error(error);
             alert('Failed to generate reply');
         } finally {
-            button.innerHTML = 'AI Reply';
+            button.innerHTML = 'Genearte Reply';
             button.disabled =  false;
         }
     });

@@ -44,7 +44,8 @@ public class EmailGeneratorService {
 
 public String buildPrompt(EmailRequest emailRequest) {
     StringBuilder prompt = new StringBuilder();
-    prompt.append("Generate a professional reply for the following email. The reply should be professional and concise. Please do not include a subject or any unnecessary information.\n");
+    prompt.append("Generate a professional reply for the following email. The reply should be professional and concise. Dont add things like you name here[Your name, Your team] . Dont generate like many only one and that should be consice\n");
+    System.out.println("JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJjjjjj");
     if (emailRequest.getTone() != null && !emailRequest.getTone().isEmpty()) {
         prompt.append("Use a ").append(emailRequest.getTone()).append(" tone.\n");
     }
